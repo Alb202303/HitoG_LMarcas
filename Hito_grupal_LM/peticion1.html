@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/peticion1.js"></script>
+    <link rel="stylesheet" href="css/stylepet1.css"> 
+    <title>Document</title>
+</head>
+<body onload="cargarData()">
+    <h1>API con POSTS</h1>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="peticion1.html">Petición Javier</a></li>
+            <li><a href="peticion2.html">Petición Astrid</a></li>
+            <li><a href="peticion3.html">Petición Alberto</a></li>
+          </ul>
+        </div>
+        <P id="datos">
+        </P>
+        <div class="divbotones">
+        <label>id del Post:</label>
+        <input type="number" min="1" max="500" class="in" id="number">
+        <br>
+        <input type="button" value="Mostrar todo"  class="btn" onclick="verTodo()">
+        <input type="button" value="Mostrar por el ID"  class="btn" onclick="verpostid()">
+        <input type="button" value="Mostrar por userid"  class="btn" onclick="veruid()">
+        </div>
+        <div id="destino">
+
+        </div>
+</body>
+</html>
